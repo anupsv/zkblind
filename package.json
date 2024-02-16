@@ -1,0 +1,23 @@
+{
+  "name": "zkblind",
+  "version": "1.0.0",
+  "description": "let there be actual blind",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anupsv/zkblind.git"
+  },
+  "author": "anupsv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anupsv/zkblind/issues"
+  },
+  "homepage": "https://github.com/anupsv/zkblind#readme",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@3.2.3",
+  "dependencies": {
+    "yarn": "^1.22.21"
+  }
+}
