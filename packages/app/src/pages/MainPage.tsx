@@ -112,7 +112,7 @@ export const MainPage: React.FC<{}> = (props) => {
     // @ts-ignore
     address: import.meta.env.VITE_CONTRACT_ADDRESS,
     abi: abi,
-    functionName: "mint",
+    functionName: "join",
     args: [
       reformatProofForChain(proof),
       publicSignals ? JSON.parse(publicSignals) : [],

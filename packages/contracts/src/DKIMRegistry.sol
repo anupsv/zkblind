@@ -3,14 +3,6 @@ pragma solidity ^0.8.0;
 
 import "./IDKIMRegistry.sol";
 
-/**
-  A Registry that store the hash(dkim_public_key) for each domain
-  The hash is calculated by taking Poseidon of DKIM key split into 9 chunks of 242 bits each
-
-  https://zkrepl.dev/?gist=43ce7dce2466c63812f6efec5b13aa73 can be used to generate the public key hash.
-  The same code is used in EmailVerifier.sol
-  Input is DKIM pub key split into 17 chunks of 121 bits. You can use `helpers` package to fetch/split DKIM keys
- */
 contract DKIMRegistry is IDKIMRegistry {
     event DKIMPublicKeyHashRegistered(string domainName, bytes32 publicKeyHash);
     event DKIMPublicKeyHashRevoked(bytes32 publicKeyHash);
